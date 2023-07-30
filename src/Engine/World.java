@@ -22,6 +22,14 @@ public class World {
         return entities;
     }
 
+    public void insertNewEntity(Entity entity){
+        entities.add(entity);
+    }
+
+    public void insertNewFinishRule(FinishRule inputFinishRule){
+        finishRule = inputFinishRule;
+    }
+
     public int GetTimeline(){
         return timeline;
     }

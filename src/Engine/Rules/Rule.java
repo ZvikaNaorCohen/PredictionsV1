@@ -9,4 +9,20 @@ public class Rule {
     private List<Action> listOfActions = new ArrayList<Action>();
     private Activation activationTiming;
 
+    public Rule(){
+        name = "Test rule name";
+    }
+
+    public List<Action> getAllRuleActions(){
+        return listOfActions;
+    }
+
+    public void insertNewAction(Action action){
+        listOfActions.add(action);
+    }
+
+    public void updateActivationTiming(Activation newTiming){
+        activationTiming = newTiming;
+    }
+
 }

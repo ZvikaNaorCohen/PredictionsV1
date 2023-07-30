@@ -8,4 +8,12 @@ public class Activation {
         ticks = i_Ticks;
         probability = i_Prob;
     }
+
+    public int getTicks(){
+        return ticks;
+    }
+
+    public double getProb(){
+        return probability;
+    }
 }
