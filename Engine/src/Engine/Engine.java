@@ -2,6 +2,7 @@ package Engine;
 
 public class Engine {
     private World mySystem;
+    private boolean isValid = false;
 
     public Engine(){
         mySystem = new World();
@@ -11,4 +12,11 @@ public class Engine {
         return mySystem;
     }
 
+    public void setValid(boolean status){
+        isValid = status;
+    }
+
+    public boolean isEngineValid(){
+        return isValid;
+    }
 }
