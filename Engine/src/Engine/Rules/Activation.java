@@ -1,8 +1,8 @@
 package Engine.Rules;
 
 public class Activation {
-    int ticks;
-    double probability;
+    private int ticks;
+    private double probability;
 
     public Activation(int i_Ticks, int i_Prob){
         ticks = i_Ticks;
